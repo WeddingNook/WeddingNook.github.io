@@ -1,0 +1,28 @@
+.pre-footer .column {
+	padding: 32px 0px 32px 0px;
+}
+
+@media screen and (max-width: 1024px) {
+	.pre-footer {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.pre-footer .col-1,
+	.pre-footer .col-2,
+	.pre-footer .col-3,
+	.pre-footer .col-4,
+	.pre-footer .col-5,
+	.pre-footer .col-6,
+	.pre-footer .col-7,
+	.pre-footer .col-8,
+	.pre-footer .col-9,
+	.pre-footer .col-10,
+	.pre-footer .col-11,
+	.pre-footer .col-12 {
+		padding: 32px 16px 32px 16px;
+		border-right: 0px !important;
+	}
+}
+
+		

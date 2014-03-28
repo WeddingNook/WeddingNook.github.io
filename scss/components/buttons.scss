@@ -1,0 +1,53 @@
+.button {
+	font-size: 1em;
+	padding: 8px 16px;
+	margin: 0px;
+	border: 0px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	background-size: auto 200% !important;
+}
+
+.button:hover {
+	background-position: 0 0;
+}
+
+.button.extra.small {
+	padding: 4px 8px;
+	font-size: 0.857em;
+}
+
+.button.small {
+	padding: 8px 16px;
+}
+
+.button.medium {
+	padding: 10px 24px;
+	font-weight: bold;
+}
+
+.button.large {
+	padding: 14px 32px;
+	font-weight: bold;
+}
+
+.button.extra.large {
+	padding: 18px 40px;
+	font-size: 1.143em;
+	font-weight: bold;
+}
+
+.button.input {
+	margin-left: -8px;
+}
+
+.button.toggle.active {
+	background: $green;
+}

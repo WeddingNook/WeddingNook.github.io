@@ -1,0 +1,40 @@
+.checkbox {
+	display: inline-block;
+}
+
+.checkbox input[type="checkbox"] {
+	display: none;
+}
+
+.checkbox label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 18px;
+}
+
+.checkbox label:before {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	background: rgb(200,200,200);
+	border: 1px solid rgb(100,100,100);
+	border-radius: 2px;
+}
+
+.checkbox input[type="checkbox"]:checked ~ label:after {
+	content: '✔';
+	font-family: arial;
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	bottom: 3px;
+	color: rgb(50,50,50);
+	border-radius: 2px;
+}

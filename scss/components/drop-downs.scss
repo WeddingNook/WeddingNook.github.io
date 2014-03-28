@@ -1,0 +1,82 @@
+.drop-down-toggle {
+	position: relative;
+	display: inline-block;
+}
+
+.drop-down {
+	position: absolute;
+	top: 100%;
+	z-index: 9;
+	display: none;
+	list-style: none;
+	background: lighten($black, 35%);
+	border: 1px solid rgba(0, 0, 0, .8);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, .5), inset 0 0 1px rgba(255, 255, 255, 0.9);
+	overflow: visible;
+	padding: 4px 0;
+	white-space: nowrap;
+}
+
+.drop-down.left {
+	left: 0px;
+}
+
+.drop-down.right {
+	right: 0px;
+}
+
+.drop-down.tip-left {
+	margin-top: 8px;
+	border-top-left-radius: 0px;
+}
+
+.drop-down.tip-left:before {
+	content: '';
+	top: -8px;
+	left: 3px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	background: lighten($black, 35%);
+	box-shadow: inset 1px 1px rgba(255,255,255,0.2), -1px -1px rgba(0,0,0,0.6);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: -1;
+}
+
+.drop-down.tip-right {
+	margin-top: 8px;
+	border-top-right-radius: 0px;
+}
+
+.drop-down.tip-right:after {
+	content: '';
+	top: -8px;
+	right: 0px;
+	position: absolute;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 8px solid lighten($black, 35%);
+}
+
+.drop-down.right.tip:before {
+	content: '';
+	top: -9px;
+	right: 0px;
+	position: absolute;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 8px solid rgba(0, 0, 0, .8);
+}
+
+.drop-down a {
+	color: $white;
+	text-shadow: 0 -1px $black;
+	padding: 8px 16px;
+	display: block;
+}
+
+.drop-down a:hover {
+	background: $blue;
+	color: $white;
+}

@@ -1,0 +1,61 @@
+.wizard {
+	overflow: auto;
+}
+
+.wizard ul {
+	background: rgba(255, 255, 255, 0.2);
+	border: 1px solid rgb(215, 215, 215);
+	white-space: nowrap;
+}
+
+.wizard ul:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.wizard li {
+	white-space: nowrap;
+	float: left;
+	display: inline-block;
+}
+
+.wizard li a {
+	float: left;
+	padding: 8px 12px 8px 32px;
+	position: relative;
+	white-space: nowrap;
+}
+
+.wizard li:first-child a {
+	padding-left: 16px;
+}
+
+.wizard li a:hover {
+	background: $blue;
+	color: $white;
+	z-index: 1;
+}
+
+.wizard li a:hover:after {
+	background: $blue;
+}
+
+.wizard li a:after {
+	position: absolute;
+	top: 5px;
+	right: -13px;
+	z-index: 1;
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: transparent;
+	box-shadow: 1px -1px 0px rgba(255, 255, 255,0.5);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	content: "";
+	z-index: -1;
+}

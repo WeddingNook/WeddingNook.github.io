@@ -1,0 +1,26 @@
+.paginator {
+	border: 1px solid rgb(215,215,215);
+}
+
+.paginator:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.paginator li a {
+	float: left;
+	padding: 8px 16px;
+	background: rgba(0,0,0,0.1);
+	position: relative;
+	border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.paginator li:last-child a {
+	border-right: 0;
+}
+
+.paginator li a:hover {
+	background: rgba(70,130,240,1);
+	color: rgb(255,255,255);
+}

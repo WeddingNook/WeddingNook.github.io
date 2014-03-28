@@ -1,0 +1,462 @@
+/*================================ Colors ==============================*/	
+
+	$green: 	rgb(80, 160, 50);
+	$blue: 		rgb(70, 130, 240);
+	$purple: 	rgb(115, 70, 180);
+	$red: 		rgb(220, 30, 30);
+	$orange: 	rgb(240, 170, 80);
+	$white: 	rgb(255, 255, 255);
+	$grey: 		rgb(125, 125, 125);
+	$black: 	rgb(0, 0, 0);
+
+/*================================ Fonts ==============================*/	
+
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+	$font: 'Open Sans', Arial, sans-serif;
+	$font-size: 14px;
+
+/*================================ Main ================================*/	
+
+	/* Set to same as footer */
+	html {
+		background: darken($grey, 20%);
+	}
+
+	body {
+		color: $white;
+		background: lighten($black, 15%);
+		position: relative;
+		z-index: -2;
+	}
+
+	.background {
+		background: url('../img/triangles.svg') center center;
+		opacity: 0.15;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -999;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	a {
+		color: darken($white, 10%);
+	}
+
+	a:hover {
+		color: $white;
+	}
+	
+	hr {
+		border-bottom: 1px solid darken($white, 25%);
+	}
+
+/*================================ Banner ==========================*/
+
+	.banner {
+		color: $white;
+		background-color: rgba(0, 0, 0, 0.8);
+		// background-image: linear-gradient(to right, rgba(150, 90, 180, 0.6),rgba(40, 150, 220, 0.6));
+	}
+
+	.animatedGradient {
+		background: linear-gradient(to right,  rgba(150, 90, 180, 0.6) 0%, rgba(40, 150, 220, 0.6) 25%, rgba(58, 213, 132, 0.6) 50%, rgba(40, 150, 220, 0.6) 75%, rgba(150, 90, 180, 0.6) 100%);
+		background-size: auto 400%;
+		background-position: 0 100%;
+		animation: gradient 60s infinite;
+		animation-fill-mode:forwards;
+		animation-timing-function: linear;
+		-webkit-animation: gradient 60s infinite;
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-timing-function: linear;
+	}
+
+	@-webkit-keyframes gradient { 
+	  0% { 
+			background-position: 0 0;
+		} 
+
+		100% { 
+			background-position: -200% 0;
+		} 
+
+	}
+
+	@keyframes gradient { 
+	  0% { 
+			background-position: 0 0;
+		} 
+
+		100% { 
+			background-position: -200% 0;
+		} 
+
+	}
+	
+/*================================ Page Width ==========================*/
+	
+	.max {
+		max-width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+/*================================ Logo ================================*/
+	
+	.logo a {
+		color: darken($white, 10%);
+		text-shadow: 0px 1px 1px $black;
+	}
+
+	.logo a:hover {
+		color: rgba(255, 255, 255, 1);
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+/*================================ Header ==============================*/
+	
+	.header {
+		box-shadow: 0px 1px rgba(255, 255, 255, 0.15);
+		background: linear-gradient(to bottom, lighten($black, 15%), lighten($black, 10%));
+	}
+
+	.header .menu li a {
+		color: darken($white, 10%);
+		background: linear-gradient(to bottom, lighten($black, 20%), lighten($black, 15%));
+	}
+	
+	.header .menu li a:hover {
+		color: $white;
+		background: linear-gradient(to bottom, lighten($black, 25%), lighten($black, 20%));
+	}
+
+/*================================ Sidebar =============================*/
+
+	.sidebar {
+		background: darken($white, 10%);
+		width: 256px;
+	}
+
+	.sidebar .menu li a {
+		color: rgba(255, 255, 255, 0.9);
+		background: rgba(0, 0, 0, 0.2);
+	}
+
+	.sidebar .menu li a:hover {
+		color: rgba(255, 255, 255, 1);
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+/*================================ Slider ==============================*/
+	
+	/* Slide Width */
+		ul.slider li.slide {
+			max-height: 400px;
+		}
+
+	/* Caption */
+		ul.slider li.slide .caption {
+			background: rgba(0, 0, 0, 0.5);
+			color: rgb(255, 255, 255);
+		}
+
+/*================================ Tables ==============================*/
+
+	.table table {
+		background: light(black, 20%);
+	}
+
+/*================================ Inputs ==============================*/
+	
+	/* Default Button */
+		.button {
+			background: $grey;
+			color: $white;
+			box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2), inset 0px 1px rgba(255, 255, 255, 0.2);
+		}
+
+		.button:hover {
+			background: lighten($grey, 5%);
+			color: $white
+		}
+
+		.button:active {
+			background: darken($grey, 5%);
+		}
+
+		.button.outline {
+			background: transparent;
+			color: $grey;
+			box-shadow: inset 0px 0px 0px 1px $grey;
+		}
+
+		.button.outline:hover {
+			background: lighten($grey, 5%);
+			color: $white;
+			box-shadow: none;
+		}
+
+		.button.outline:active {
+			background: darken($grey, 5%);
+		}
+
+	/* Blue Button */
+		.button.blue {
+			background: $blue;
+			color: $white;
+		}
+
+		.button.blue:hover {
+			background: lighten($blue, 5%);
+		}
+
+		.button.blue:active {
+			background: darken($blue, 5%);
+		}
+
+		.button.blue.outline {
+			background: transparent;
+			color: $blue;
+			box-shadow: inset 0px 0px 0px 1px $blue;
+		}
+
+		.button.blue.outline:hover {
+			background: lighten($blue, 5%);
+			color: $white;
+			box-shadow: none;
+		}
+
+		.button.blue.outline:active {
+			background: darken($blue, 5%);
+		}
+
+	/* Red Button */
+		.button.red {
+			background: $red;
+			color: $white;
+		}
+
+		.button.red:hover {
+			background: lighten($red, 5%);
+		}
+
+		.button.red:active {
+			background: darken($red, 5%);
+		}
+
+		.button.red.outline {
+			background: transparent;
+			color: $red;
+			box-shadow: inset 0px 0px 0px 1px $red;
+		}
+
+		.button.red.outline:hover {
+			background: $red;
+			color: $white;
+		}
+
+		.button.red.outline:active {
+			background: darken($red, 5%);
+		}
+
+	/* Orange Button */
+		.button.orange {
+			background: $orange;
+			color: $white;
+		}
+
+		.button.orange:hover {
+			background: lighten($orange, 5%);
+		}
+
+		.button.orange:active {
+			background: darken($orange, 5%);
+		}
+
+		.button.orange.outline {
+			background: transparent;
+			color: $orange;
+			box-shadow: inset 0px 0px 0px 1px $orange;
+		}
+
+		.button.orange.outline:hover {
+			background: $orange;
+			color: $white;
+		}
+
+		.button.orange.outline:active {
+			background: darken($orange, 5%);
+		}
+
+	/* Purple Button */
+		.button.purple {
+			background: $purple;
+			color: $white;
+		}
+
+		.button.purple:hover {
+			background: lighten($purple, 5%);
+		}
+
+		.button.purple:active {
+			background: darken($purple, 5%);
+		}
+
+		.button.purple.outline {
+			background: transparent;
+			color: $purple;
+			box-shadow: inset 0px 0px 0px 1px $purple;
+		}
+
+		.button.purple.outline:hover {
+			background: $purple;
+			color: $white;
+		}
+
+		.button.purple.outline:active {
+			background: darken($orange, 5%);
+		}
+
+	/* Green Button */
+		.button.green {
+			background: $green;
+			color: $white;
+		}
+
+		.button.green:hover {
+			background: lighten($green, 5%);
+		}
+
+		.button.green:active {
+			background: darken($green, 5%);
+		}
+
+		.button.green.outline {
+			background: transparent;
+			color: $green;
+			box-shadow: inset 0px 0px 0px 1px $green;
+		}
+
+		.button.green.outline:hover {
+			background: $green;
+			color: $white;
+		}
+
+		.button.green.outline:active {
+			background: darken($green, 5%);
+		}
+
+	/* White Button */
+
+		.button.white {
+			background: darken($white, 5%);
+			color: $black;
+		}
+
+		.button.white:hover {
+			background: $white;
+		}
+
+		.button.white:active {
+			background: darken($white, 10%);
+		}
+
+		.button.white.outline {
+			color: $white;
+			background: transparent;
+			box-shadow: inset 0px 0px 0px 1px $white;
+		}
+
+		.button.white.outline:hover {
+			background: $white;
+			color: $black;
+		}
+
+		.button.white.outline:active {
+			background: darken($white, 10%);
+		}
+
+	/* Black Button */
+
+		.button.black {
+			background: lighten($black, 5%);
+			color: $white;
+		}
+
+		.button.black:hover {
+			background: lighten($black, 10%);
+		}
+
+		.button.black:active {
+			background: $black;
+		}
+
+		.button.black.outline {
+			color: $black;
+			background: transparent;
+			box-shadow: inset 0px 0px 0px 1px $black;
+		}
+
+		.button.black.outline:hover {
+			background: lighten($black, 10%);
+			color: rgba(255, 255, 255, 1);
+		}
+
+		.button.black.outline:active {
+			background: lighten($black, 5%);
+		}
+
+/*================================ Pre-Footer ==========================*/
+
+	.pre-footer .column:not(:last-child) {
+		border-right: 1px solid darken($white, 50%);
+	}
+
+/*================================ Footer ==============================*/
+	
+	.footer {
+		background: rgb(50, 50, 50);
+	}
+
+	.footer a {
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.footer a:hover {
+		color: rgba(255, 255, 255, 1);
+	}
+
+/*================================ Rounded Corners =====================*/
+
+	.round {
+		border-radius: 4px;
+	}
+	.round.top {
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+	.round.right {
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+	.round.bottom {
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+	.round.left {
+		border-bottom-left-radius: 4px;
+		border-top-left-radius: 4px;
+		border-bottom-right-radius: 0px;
+		border-top-right-radius: 0px;
+	}
