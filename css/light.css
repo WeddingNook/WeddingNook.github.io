@@ -2,9 +2,15 @@ body {
 	color: black;
 	background: white;
 }
+
 a {
 	color: black;
 }
+
+a:hover {
+	color: black;
+}
+
 .thumbnail {
 	border-color: rbga(0,0,0,0.2);
 }

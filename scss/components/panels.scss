@@ -1,7 +1,22 @@
-.panel {margin-bottom: 16px}
-.panel-header {padding: 8px}
-.panel-content {padding: 8px}
-.panel-footer {}
+.panel {
+	box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35);
+	
+	.panel-header {
+		padding: 8px;
+		background: $blue;
+		color: $white;
+	}
+
+	.panel-content {
+		padding: 8px;
+		background: lighten($black, 5%);
+	}
+
+	.panel-footer {
+		padding: 8px;
+		background: lighten($black, 10%);
+	}
+}
 
 .post-title {
 	font-weight: bold;

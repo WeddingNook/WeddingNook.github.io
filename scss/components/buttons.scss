@@ -13,41 +13,37 @@
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 	background-size: auto 200% !important;
-}
 
-.button:hover {
-	background-position: 0 0;
-}
+	&.extra-small {
+		padding: 4px 8px;
+		font-size: 0.857em;
+	}
 
-.button.extra.small {
-	padding: 4px 8px;
-	font-size: 0.857em;
-}
+	&.small {
+		padding: 8px 16px;
+	}
 
-.button.small {
-	padding: 8px 16px;
-}
+	&.medium {
+		padding: 10px 24px;
+		font-weight: bold;
+	}
 
-.button.medium {
-	padding: 10px 24px;
-	font-weight: bold;
-}
+	&.large {
+		padding: 14px 32px;
+		font-weight: bold;
+	}
 
-.button.large {
-	padding: 14px 32px;
-	font-weight: bold;
-}
+	&.extra-large {
+		padding: 18px 40px;
+		font-size: 1.143em;
+		font-weight: bold;
+	}
 
-.button.extra.large {
-	padding: 18px 40px;
-	font-size: 1.143em;
-	font-weight: bold;
-}
+	&.input {
+		margin-left: -8px;
+	}
 
-.button.input {
-	margin-left: -8px;
-}
-
-.button.toggle.active {
-	background: $green;
+	&.toggle.active {
+		@extend .button.green;
+	}
 }

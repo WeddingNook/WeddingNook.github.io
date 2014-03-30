@@ -1,0 +1,15 @@
+/*================================ Type ==============================*/
+@font-face {
+  font-family: 'dragon_is_comingregular';
+  src: url("../type/dragon_is_coming-webfont.eot");
+  src: url("../type/dragon_is_coming-webfont.eot?#iefix") format("embedded-opentype"), url("../type/dragon_is_coming-webfont.woff") format("woff"), url("../type/dragon_is_coming-webfont.ttf") format("truetype"), url("../type/dragon_is_coming-webfont.svg#dragon_is_comingregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'geosanslightregular';
+  src: url("../type/geosanslight-webfont.eot");
+  src: url("../type/geosanslight-webfont.eot?#iefix") format("embedded-opentype"), url("../type/geosanslight-webfont.woff") format("woff"), url("../type/geosanslight-webfont.ttf") format("truetype"), url("../type/geosanslight-webfont.svg#geosanslightregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

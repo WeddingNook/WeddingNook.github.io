@@ -1,109 +1,35 @@
 .menu-wrapper {
-		background: lighten($black, 10%);
+	background: lighten($black, 10%);
+	float: right;
+
+	ul {
+
+		li {
+			list-style-type: none;
+			position: relative;
+			display: inline-block;
+			float: left;
+
+			a {
+				display: inline-block;
+				padding: 16px;
+			}
+
+			&.current-menu-item a {
+				box-shadow: inset 0px -4px $blue, 0px 1px rgba(0,0,0,0.5);
+			}
+		}
+
+		&:after {
+			clear: both;
+			display: block;
+			content: '';
+		}
 	}
 
-.menu-wrapper ul li {
-	list-style-type: none;
-	position: relative;
-}
-
-.header .menu-wrapper ul li.current-menu-item a {
-	box-shadow: inset 0px -4px $blue, 0px 1px rgba(0,0,0,0.5);
-}
-
-.header .menu-wrapper ul:after {
-	clear: both;
-	display: block;
-	content: '';
-}
-
-.header .menu-wrapper ul li {
-	display: inline-block;
-	float: left;
-}
-
-.header .menu-wrapper ul li a {
-	display: inline-block;
-	padding: 16px;
-}
-
-.sidebar .menu-wrapper ul li a {
-	display: block;
-	padding: 16px;
-}
-
-.menu-wrapper ul li a:hover + ul {
-	display: inline-block;
-}
-
-.menu-wrapper ul li ul {
-	position: absolute;
-	z-index: 10;
-	display: none;
-	top: 100%;
-	width: auto;
-}
-
-.menu-wrapper ul li ul li a {
-	width: 128px;
-}
-
-.menu-wrapper ul li ul:hover {
-	display: inline-block;
-}
-
-.menu ul li ul li ul {
-	position: absolute;
-	z-index: 10;
-	display: none;
-	left: 100%;
-	top: 0;
-}
-
-.header .menu .sub-menu .menu-item-has-children:after {
-	position: absolute;
-	content: '';
-	top: 20px;
-	right: 8px;
-	width: 0; 
-	height: 0; 
-	border-top: 5px solid transparent;
-	border-bottom: 5px solid transparent;
-	border-left: 6px solid rgba(255,255,255,1);
-	pointer-events: none;
-}
-
-.header .menu-wrapper .menu-toggle {
-	cursor: pointer;
-}
-
-.header .menu input[type=checkbox] {
-	position: absolute;
-	display: none;
-	top: 0px;
-	left: 0px;
-}
-
-.header .menu label {
-	display: none;
-	cursor: pointer;
-	user-select: none;
-}
-
-.header .menu {
-	position: relative;
-}
-
-.header .menu ul {
-	padding: 0;
-	margin: 0 auto;
-	width: 100%;
-	list-style: none;
-}
-
-.header .menu ul li {
-	float: left;
-	cursor: pointer;
+	.menu-toggle {
+		cursor: pointer;
+	}
 }
 
 @media screen and (max-width: 800px) {

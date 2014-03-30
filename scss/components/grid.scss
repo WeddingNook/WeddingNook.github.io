@@ -1,57 +1,75 @@
 .row {
 	margin-left: -16px;
 	margin-right: -16px;
-}
 
-.row:after {
-	clear: both;
-	content: " ";
-	display: block;
-}
-
-.row .column {
-	float: left;
-	padding-left: 16px;
-	padding-right: 16px;
-}
-
-/* Row based grid */
-.one.row .column 	{ width: percentage(1/1) }
-.two.row .column 	{ width: percentage(1/2) }
-.three.row .column 	{ width: percentage(1/3) }
-.four.row .column 	{ width: percentage(1/4) }
-.five.row .column 	{ width: percentage(1/5) }
-.six.row .column 	{ width: percentage(1/6) }
-.seven.row .column 	{ width: percentage(1/7) }
-.eight.row .column 	{ width: percentage(1/8) }
-.nine.row .column 	{ width: percentage(1/9) }
-.ten.row .column 	{ width: percentage(1/10) }
-
-/* Column based grid */
-.one.column 	{ width: percentage(1/12) }
-.two.column 	{ width: percentage(2/12) }
-.three.column 	{ width: percentage(3/12) }
-.four.column 	{ width: percentage(4/12) }
-.five.column 	{ width: percentage(5/12) }
-.six.column 	{ width: percentage(6/12) }
-.seven.column 	{ width: percentage(7/12) }
-.eight.column 	{ width: percentage(8/12) }
-.nine.column 	{ width: percentage(9/12) }
-.ten.column 	{ width: percentage(10/12) }
-.eleven.column 	{ width: percentage(11/12) }
-.twelve.column 	{ width: percentage(12/12) }
-
-@media screen and (max-width: 800px) {
-	.row .column.responsive {
-		width: 100%;
-		padding-left: 0px;
-		padding-right: 0px;
-		margin-bottom: 32px;
+	&:after {
+		clear: both;
+		content: " ";
+		display: block;
 	}
-	.row.responsive .column {
-		width: 100%;
-		padding-left: 0px;
-		padding-right: 0px;
-		margin-bottom: 32px;
+
+	.column {
+		float: left;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	/* Row based grid */
+	&.one .column 	{ width: percentage(1/1) }
+	&.two .column 	{ width: percentage(1/2) }
+	&.three .column { width: percentage(1/3) }
+	&.four .column 	{ width: percentage(1/4) }
+	&.five .column 	{ width: percentage(1/5) }
+	&.six .column 	{ width: percentage(1/6) }
+	&.seven .column { width: percentage(1/7) }
+	&.eight .column { width: percentage(1/8) }
+	&.nine .column 	{ width: percentage(1/9) }
+	&.ten .column 	{ width: percentage(1/10) }
+
+	/* Column based grid */
+	.one.column 	{ width: percentage(1/12) }
+	.two.column 	{ width: percentage(2/12) }
+	.three.column 	{ width: percentage(3/12) }
+	.four.column 	{ width: percentage(4/12) }
+	.five.column 	{ width: percentage(5/12) }
+	.six.column 	{ width: percentage(6/12) }
+	.seven.column 	{ width: percentage(7/12) }
+	.eight.column 	{ width: percentage(8/12) }
+	.nine.column 	{ width: percentage(9/12) }
+	.ten.column 	{ width: percentage(10/12) }
+	.eleven.column 	{ width: percentage(11/12) }
+	.twelve.column 	{ width: percentage(12/12) }
+
+	@media screen and (max-width: 800px) {
+		.column.responsive {
+			width: 100%;
+			padding-left: 0px;
+			padding-right: 0px;
+			margin-bottom: 32px;
+		}
+		.responsive .column {
+			width: 100%;
+			padding-left: 0px;
+			padding-right: 0px;
+			margin-bottom: 32px;
+		}
+	}
+
+	&.fluid {
+		display: table;
+
+		.column {
+			display: table-cell;
+			vertical-align: top;
+			float: none;
+
+			&.fluid {
+				width: 100%
+			}
+
+			&.static {
+
+			}
+		}
 	}
 }

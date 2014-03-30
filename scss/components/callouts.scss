@@ -4,74 +4,58 @@
 	border-left-style: solid;
 	background: rgb(245,245,245);
 	margin-bottom: 16px;
-}
 
-.callout h1,
-.callout h2,
-.callout h3,
-.callout h4,
-.callout h5,
-.callout h6 {
-	font-weight: 400;
-}
+	p {
+		margin: 0;
+	}
 
-.callout p {
-	margin: 0;
-}
+	@for $index from 1 through 6 {
+		h#{$index} {
+			font-weight: 400;
+		}
+	}
 
-.callout.warning {
-	background: rgba(255, 255, 0, 0.05);
-	border-left-color: rgb(230, 175, 90);
-}
+	&.warning {
+		background: rgba(255, 255, 0, 0.05);
+		border-left-color: rgb(230, 175, 90);
 
+		@for $index from 1 through 6 {
+			h#{$index} {
+				color: rgb(230,175,90);
+			}
+		}
+	}
 
-.callout.warning h1,
-.callout.warning h2,
-.callout.warning h3,
-.callout.warning h4,
-.callout.warning h5,
-.callout.warning h6 {
-	color: rgb(230,175,90);
-}
+	&.danger {
+		background: rgba(250, 0, 0, 0.05);
+		border-left-color: rgb(220, 80, 80);
 
-.callout.danger {
-	background: rgba(250, 0, 0, 0.05);
-	border-left-color: rgb(220, 80, 80);
-}
+		@for $index from 1 through 6 {
+			h#{$index} {
+				color: rgb(220, 80, 80);
+			}
+		}
+	}
 
-.callout.danger h1,
-.callout.danger h2,
-.callout.danger h3,
-.callout.danger h4,
-.callout.danger h5,
-.callout.danger h6 {
-	color: rgb(220, 80, 80);
-}
+	&.success {
+		background: rgba(0, 255, 0, 0.05);
+		border-left-color: rgb(90, 185, 90);
 
-.callout.success {
-	background: rgba(0, 255, 0, 0.05);
-	border-left-color: rgb(90, 185, 90);
-}
+		@for $index from 1 through 6 {
+			h#{$index} {
+				color: rgb(90, 185, 90);
+			}
+		}
+	}
 
-.callout.success h1,
-.callout.success h2,
-.callout.success h3,
-.callout.success h4,
-.callout.success h5,
-.callout.success h6 {
-	color: rgb(90, 185, 90);
-}
+	&.info {
+		background: rgba(0, 128, 255, 0.05);
+		border-left-color: rgb(90, 190, 220);
 
-.callout.info {
-	background: rgba(0, 128, 255, 0.05);
-	border-left-color: rgb(90, 190, 220);
-}
-
-.callout.info h1,
-.callout.info h2,
-.callout.info h3,
-.callout.info h4,
-.callout.info h5,
-.callout.info h6 {
-	color: rgb(90, 190, 220);
+		@for $index from 1 through 6 {
+			h#{$index} {
+				color: rgb(90, 190, 220);
+			}
+		}
+	}
 }

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import
+	"components/type",
 	"components/theme",
 	"components/reset",
 	"components/base",
@@ -31,4 +32,5 @@
 	"components/lightbox",
 	"components/sidebar",
 	"components/shapes",
-	"components/feature";
+	"components/feature",
+	"components/custom";

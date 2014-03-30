@@ -1,4 +1,8 @@
-.logo a {
-	padding: 16px;
-	display: block;
+.logo {
+	float: left;
+
+	& a {
+		padding: 16px;
+		display: block;
+	}
 }
