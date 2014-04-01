@@ -1,0 +1,313 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+/*================================ Colors ==============================*/
+/*================================ Fonts ==============================*/
+/*================================ Main ================================*/
+/* Set to same as footer */
+html {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  color: black;
+  background: white;
+  position: relative;
+  z-index: -2;
+}
+
+/* .background {
+	background: url('../img/triangles.svg') center center;
+	opacity: 0.15;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -999;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} */
+a {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+
+hr {
+  border-bottom: 1px solid black;
+}
+
+/*================================ Banner ==========================*/
+.banner {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.animatedGradient {
+  background: linear-gradient(to right, rgba(150, 90, 180, 0.6) 0%, rgba(40, 150, 220, 0.6) 25%, rgba(58, 213, 132, 0.6) 50%, rgba(40, 150, 220, 0.6) 75%, rgba(150, 90, 180, 0.6) 100%);
+  background-size: auto 400%;
+  background-position: 0 100%;
+  animation: gradient 60s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  -webkit-animation: gradient 60s infinite;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+/*================================ Page Width ==========================*/
+.max {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*================================ Logo ================================*/
+.logo a {
+  color: #e6e6e6;
+  text-shadow: 0px 1px 1px black;
+}
+.logo a:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/*================================ Header ==============================*/
+.header {
+  box-shadow: 0px 1px rgba(255, 255, 255, 0.15);
+  background: linear-gradient(to bottom, #262626, #1a1a1a);
+}
+.header .menu li a {
+  color: #e6e6e6;
+  background: linear-gradient(to bottom, #333333, #262626);
+}
+.header .menu li a:hover {
+  color: white;
+  background: linear-gradient(to bottom, #404040, #333333);
+}
+
+/*================================ Sidebar =============================*/
+.sidebar {
+  background: #e6e6e6;
+  width: 256px;
+}
+
+.sidebar .menu li a {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .menu li a:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*================================ Slider ==============================*/
+/* Slide Width */
+ul.slider li.slide {
+  max-height: 400px;
+}
+
+/* Caption */
+ul.slider li.slide .caption {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/*================================ Tables ==============================*/
+.table table {
+  background: light(black, 20%);
+}
+
+/*================================ Buttons =============================*/
+.button {
+  color: white;
+  background: #7d7d7d;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2), inset 0px 1px rgba(255, 255, 255, 0.2);
+}
+.button:hover {
+  color: white;
+  background: #979797;
+}
+.button.outline {
+  color: #7d7d7d;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px #7d7d7d;
+}
+.button.outline:hover {
+  color: white;
+  background: #8a8a8a;
+  box-shadow: none;
+}
+.button.black {
+  color: white;
+  background: #0d0d0d;
+}
+.button.black:hover {
+  background: #1a1a1a;
+}
+.button.black.outline {
+  color: black;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px black;
+}
+.button.black.outline:hover {
+  color: white;
+  background: #0d0d0d;
+}
+.button.white {
+  color: black;
+  background: #e6e6e6;
+}
+.button.white:hover {
+  background: white;
+}
+.button.white.outline {
+  color: white;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px white;
+}
+.button.white.outline:hover {
+  color: black;
+  background: #e6e6e6;
+}
+.button.green {
+  color: white;
+  background: #50a032;
+}
+.button.green:hover {
+  background: #65c441;
+}
+.button.green.outline {
+  color: #50a032;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px #50a032;
+}
+.button.green.outline:hover {
+  color: white;
+  background: #50a032;
+}
+.button.blue {
+  color: white;
+  background: #4682f0;
+}
+.button.blue:hover {
+  background: #75a2f4;
+}
+.button.blue.outline {
+  color: #4682f0;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px #4682f0;
+}
+.button.blue.outline:hover {
+  color: white;
+  background: #4682f0;
+  box-shadow: none;
+}
+.button.purple {
+  color: white;
+  background: #c600c0;
+}
+.button.purple:hover {
+  background: #f900f1;
+}
+.button.purple.outline {
+  color: #c600c0;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px #c600c0;
+}
+.button.purple.outline:hover {
+  color: white;
+  background: #c600c0;
+}
+.button.red {
+  color: white;
+  background: #dc1e1e;
+}
+.button.red:hover {
+  background: #e64747;
+}
+.button.red.outline {
+  color: #dc1e1e;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px #dc1e1e;
+}
+.button.red.outline:hover {
+  color: white;
+  background: #dc1e1e;
+}
+.button.orange {
+  color: white;
+  background: #d78c2d;
+}
+.button.orange:hover {
+  background: #dfa358;
+}
+.button.orange.outline {
+  color: #d78c2d;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px #d78c2d;
+}
+.button.orange.outline:hover {
+  color: white;
+  background: #d78c2d;
+}
+
+/*================================ Pre-Footer ==========================*/
+.pre-footer .column:not(:last-child) {
+  border-right: 1px solid gray;
+}
+
+/*================================ Footer ==============================*/
+.footer {
+  background: #323232;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/*================================ Rounded Corners =====================*/
+.round {
+  border-radius: 4px;
+}
+.round.top {
+  border-radius: 4px 4px 0px 0px;
+}
+.round.right {
+  border-radius: 0px 4px 4px 0px;
+}
+.round.bottom {
+  border-radius: 0px 0px 4px 4px;
+}
+.round.left {
+  border-radius: 4px 0px 0px 4px;
+}

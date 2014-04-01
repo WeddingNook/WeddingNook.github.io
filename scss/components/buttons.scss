@@ -1,5 +1,5 @@
 .button {
-	font-size: 1em;
+	font-size: 1.5em;
 	padding: 8px 16px;
 	margin: 0px;
 	border: 0px;
@@ -25,12 +25,10 @@
 
 	&.medium {
 		padding: 10px 24px;
-		font-weight: bold;
 	}
 
 	&.large {
 		padding: 14px 32px;
-		font-weight: bold;
 	}
 
 	&.extra-large {
