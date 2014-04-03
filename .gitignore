@@ -1,16 +1,4 @@
 #################
-## WordPress
-#################
-
-/fonts
-/img
-/css-source
-*.php
-*.json
-style.css
-
-
-#################
 ## Eclipse
 #################
 
