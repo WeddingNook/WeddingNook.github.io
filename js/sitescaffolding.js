@@ -79,8 +79,8 @@ $(document).ready(function() {
         });
 
     // Light/Dark
-        $('#turn-off-lights').click(function (){
-            if ($('head').has)
-           $('head').append('<link rel="stylesheet" href="http://sitescaffolding.com/wp-content/themes/SiteScaffolding/css/light.css" type="text/css" />');
-        });
+    //    $('#turn-off-lights').click(function (){
+    //        if ($('head').has)
+    //      $('head').append('<link rel="stylesheet" href="http://sitescaffolding.com/wp-content/themes/SiteScaffolding/css/light.css" type="text/css" />');
+    //    });
 });
