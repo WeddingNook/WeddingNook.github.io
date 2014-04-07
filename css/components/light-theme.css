@@ -40,11 +40,6 @@ hr {
 }
 
 /*================================ Banner ==========================*/
-.banner {
-  color: black;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 .animatedGradient {
   background: linear-gradient(to right, rgba(150, 90, 180, 0.6) 0%, rgba(40, 150, 220, 0.6) 25%, rgba(58, 213, 132, 0.6) 50%, rgba(40, 150, 220, 0.6) 75%, rgba(150, 90, 180, 0.6) 100%);
   background-size: auto 400%;
