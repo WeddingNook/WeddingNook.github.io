@@ -19,8 +19,9 @@
 
 	/* Set to same as footer */
 	html { 
-  		
+  		padding: 0;
 	}
+
 	body {
 		color: $black;
 		background: url(../img/bg.jpg) no-repeat center center fixed; 
@@ -67,17 +68,17 @@
 		// background-image: linear-gradient(to right, rgba(150, 90, 180, 0.6),rgba(40, 150, 220, 0.6));
 	}
 
-	.animatedGradient {
-		background: linear-gradient(to right,  rgba(150, 90, 180, 0.6) 0%, rgba(40, 150, 220, 0.6) 25%, rgba(58, 213, 132, 0.6) 50%, rgba(40, 150, 220, 0.6) 75%, rgba(150, 90, 180, 0.6) 100%);
-		background-size: auto 400%;
-		background-position: 0 100%;
-		animation: gradient 60s infinite;
-		animation-fill-mode:forwards;
-		animation-timing-function: linear;
-		-webkit-animation: gradient 60s infinite;
-		-webkit-animation-fill-mode: forwards;
-		-webkit-animation-timing-function: linear;
-	}
+	// .animatedGradient {
+	// 	background: linear-gradient(to right,  rgba(150, 90, 180, 0.6) 0%, rgba(40, 150, 220, 0.6) 25%, rgba(58, 213, 132, 0.6) 50%, rgba(40, 150, 220, 0.6) 75%, rgba(150, 90, 180, 0.6) 100%);
+	// 	background-size: auto 400%;
+	// 	background-position: 0 100%;
+	// 	animation: gradient 60s infinite;
+	// 	animation-fill-mode:forwards;
+	// 	animation-timing-function: linear;
+	// 	-webkit-animation: gradient 60s infinite;
+	// 	-webkit-animation-fill-mode: forwards;
+	// 	-webkit-animation-timing-function: linear;
+	// }
 
 	@-webkit-keyframes gradient { 
 	  0% { 
