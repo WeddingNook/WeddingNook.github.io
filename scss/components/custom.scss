@@ -23,18 +23,32 @@ h3 {
 
 .left-sidebar {
 	width: 100%;
-	height: 470px;
+	height: 335px;
 	position: relative;
 	border: 2px solid $purple;
 }
 
+#square li{
+  list-style: url(../img/bullet.png);
+  margin-left: 24px;
+}
+
 // Input Styles
+
+.email-submit {
+	width: 100%;
+	margin: 10px 0 0 0;
+	padding: 14px 0;
+	text-align: center;
+}
 
 .input {
 	height: 55px;
 	border: 2px solid $purple;
 	font-size: 1.5em;
 	font-family: 'Open Sans', Arial, sans-serif;
+	width: 100%;
+	margin: 10px 0 0 0;
 }
 
 .input::-webkit-input-placeholder {
