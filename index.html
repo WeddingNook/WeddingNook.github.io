@@ -2,7 +2,11 @@
 	<title>The Wedding Nook</title>
 	<link rel="stylesheet" type="text/css" href="css/scaffolding.css">
 	<link rel="stylesheet" type="text/css" href="css/ionicons.css">
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 	<script src="js/sitescaffolding.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
@@ -22,40 +26,70 @@
 	<div class="max">
 		<div class="body">
 			<div class="row">
-				<div class="twelve column responsive">
-					<center>
-						
-						
-					</center>
-				</div>
-			</div>
-			<br>
-			<div class="row">
 				<div class="four column responsive">
 					<div class="left-sidebar">
-						<div id="navcontainer">
-							<ul id="square">
-								<li><a href="#">Item one</a></li>
-								<li><a href="#">Item two</a></li>
-								<li><a href="#">Item three</a></li>
-								<li><a href="#">Item four</a></li>
-								<li><a href="#">Item five</a></li>
-							</ul>
+						<div class="row">
+							<div class="twelve column responsive">
+								<center class="sidebar-header">
+									What we do for you!
+								</center>
+							</div>
 						</div>
-						<div class="socal-media">
-							<a href="#"><img src="../img/socialMedia/facebook.png" alt=""></a>
-							<a href="#"><img src="../img/socialMedia/twitter.png" alt=""></a>
-							<a href="#"><img src="../img/socialMedia/google_plus.png" alt=""></a>
-							<a href="#"><img src="../img/socialMedia/linkedin.png" alt=""></a>
+						<div class="row">
+							<div class="seven column responsive features">
+								<ul>
+									<li><a href="#" title="Through your profile on our site, brides can request to book you for a specific day, based on your availability.  Your reply will seal the deal." rel="tooltip">Booking</a></li>
+									<li><a href="#" title="We advertise locally in Bridal Publications, Newspapers and Magazines, on Social Media and at Bridal Festivals.  When you sign up as a provider though our system, all of our marketing becomes your marketing." rel="tooltip">Marketing</a></li>
+									<li><a href="#" title="After you have met with the bride and groom, you will receive a direct deposit through our system.  The deposit will be 50% of your set price.  The Full Price will be paid within 48 hours before the event.  All of your payments will show up in your account the moment the marrying parties pay through our site." rel="tooltip">Direct Deposit</a></li>
+									<li><a href="#" title="Upload Images, Videos, or Sound Clips to highlight your abilities as a service provider." rel="tooltip">Portfolios</a></li>
+									<li><a href="#" title="Explain who you are to the client to gain their business." rel="tooltip">About Me Section</a></li>
+									<li><a href="#" title="After a bride has used you though our system, she will be able to review and rate your services on our site. (If these reviews are negative we will contact the client and other providers directly to understand their problem and correct the situation.)" rel="tooltip">Ratings & Reviews</a></li>
+									<li><a href="#" title="You can integrate your Google Calendar with our system to black out availability. This will help track availability through our system and gain you more business.  (We will not pull any information from your calendar, but will black out days that you already have scheduled.)" rel="tooltip">Calender</a></li>
+								</ul>
+							</div>
+							<div class="four column responsive learn-more">
+								Hover to learn more!
+								<br />
+								<img src="../img/arrow.png" alt="">
+							</div>
 						</div>
+
+						<div class="row">
+							<div class="twelve column responsive sidebar-footer">
+								All for Free just For Signing Up
+							</div>
+						</div>
+						<div class="row social-media">
+							<div class="six column responsive">
+								All rights reserved Wedding Nook LLC
+							</div>
+							<div class="six column responsive">
+								<a href="#"><img src="../img/socialMedia/facebook.png" alt=""></a>
+								<a href="#"><img src="../img/socialMedia/twitter.png" alt=""></a>
+							</div>
+						</div>
+						
 					</div>
-					<input type="text" class="input round-left" placeholder="email" name="sp_email">
-					<a class="large round purple button email-submit">grow your buisness</a>
-				</div>
+					<form id="contact" name="contact" method="post">  
+  						<fieldset> 
+							<input  for="email" id="email" type="text" name="email" id="email" class="input round-left" placeholder="email" name="sp_email">
+							<!-- <a id="submit" type="submit" name="submit" class="large round purple button email-submit">grow your business</a> -->
+							<input id="submit" type="submit" name="submit" class="large round purple button email-submit" value="grow your business" />  
+						</fieldset>  
+					</form>
+					</div>
 				<div class="eight column responsive">
-					<img src="../img/weddingNook.png" alt="">
+					<img src="../img/iDevices.png" alt="">
 				</div> 
-			</div>
+			
 		</div>
 	</div>
+	 
+ 
+   <!--  <label for="email" id="email">Email<span class="required">*</span></label>
+    <input type="text" name="email" id="email" size="30" value="" required/>
+ 
+    
+  </fieldset>  
+</form> -->
 </body></html>

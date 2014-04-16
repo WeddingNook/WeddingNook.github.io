@@ -1836,9 +1836,56 @@ h3 {
   border: 2px solid #c600c0;
 }
 
-#square li {
-  list-style: url(../img/bullet.png);
-  margin-left: 24px;
+.features li {
+  list-style: url(../img/bullet-round.png);
+  margin-left: 13px;
+  font-size: 15px;
+}
+
+.sidebar-header {
+  font-size: 87px;
+  font-family: 'dragon_is_comingregular';
+  color: white;
+  padding: 4px;
+  background: #c600c0;
+}
+
+.features {
+  margin: 10px;
+  font-size: 15px;
+}
+
+.learn-more {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.learn-more img {
+  margin: 0 auto;
+}
+
+.sidebar-footer {
+  font-size: 24px;
+  font-family: 'geosanslightregular';
+  color: black;
+  margin: 8px;
+}
+
+.features img {
+  padding: 10px;
+}
+
+.ui-widget-content {
+  background: white !important;
+  border-radius: 0px !important;
+  border: 1px solid rgba(0, 0, 0, 0.68) !important;
+  margin-top: -29px !important;
+}
+
+.social-media {
+  position: relative;
+  top: 10px;
+  left: 12px;
 }
 
 .email-submit {
@@ -1846,6 +1893,13 @@ h3 {
   margin: 10px 0 0 0;
   padding: 14px 0;
   text-align: center;
+  font-family: 'geosanslightregular';
+  font-size: 28px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
 }
 
 .input {
