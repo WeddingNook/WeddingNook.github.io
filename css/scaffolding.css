@@ -1274,6 +1274,13 @@ ul.slider li.slide .caption {
 }
 
 @media screen and (max-width: 800px) {
+  .learn-more {
+    margin-top: 0;
+  }
+  .learn-more img {
+    display: none;
+  }
+
   .row {
     margin-left: 0;
     margin-right: 0;
@@ -1292,7 +1299,7 @@ ul.slider li.slide .caption {
   }
   .left-sidebar .features li {
     list-style: none;
-    margin-left: 13px;
+    margin-left: 0;
     font-size: 25px;
     text-align: center;
   }

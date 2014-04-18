@@ -79,6 +79,12 @@
 }
 
 @media screen and (max-width: 800px) {
+	.learn-more {
+		margin-top: 0;
+		img {
+			display: none;
+		}
+	}
 	.row {
 		margin-left: 0;
 		margin-right: 0;
@@ -93,7 +99,7 @@
 		font-size: 21px;
 		.features li {
 			list-style: none;
-			margin-left: 13px;
+			margin-left: 0;
 			font-size: 25px;
 			text-align: center;
 		}
