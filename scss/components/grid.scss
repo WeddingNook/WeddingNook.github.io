@@ -53,6 +53,10 @@
 			padding-right: 0px;
 			margin-bottom: 32px;
 		}
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 
 	&.fluid {
@@ -70,6 +74,28 @@
 			&.static {
 
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.learn-more {
+		margin-top: 0;
+	}
+	.row .responsive .column {
+		margin-bottom: 12px;
+	}
+	.left-sidebar {
+		font-size: 21px;
+		.features li {
+			list-style: none;
+			margin-left: 13px;
+			font-size: 25px;
+			text-align: center;
 		}
 	}
 }
